@@ -1,19 +1,17 @@
-import React from 'react';
-
-import WatchList from './components/watchList';
-import AssetDetails from './pages/assetDetails';
+import React from "react";
+import WatchList from "./components/watchList";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-        <h1>Crypto Watchlist</h1>
-        <Routes>
-          <Route path="/" element={<WatchList />} />
-          <Route path="/asset/:id" element={<AssetDetails />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="app">
+      <header className="app-header">
+        <h1>Crypto Asset Watch</h1>
+      </header>
+      <main>
+        <WatchList />
+      </main>
+    </div>
   );
 }
 

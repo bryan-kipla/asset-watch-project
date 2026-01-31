@@ -1,27 +1,24 @@
-import axios from 'axios';
+import axios from "axios";
 
-const api = axios.create({
-  baseURL: 'https://api.geckoterminal.com/api/v2/networks',
-  timeout: 10000,
-});
+const API_URL = "https://api.coingecko.com/api/v3";
 
-api.interceptors.request.use(
-  (config) => {
-    return config;
-  },
-  (error) => {
-    return Promise.reject(error);
+export const getMarketData = async () => {
+  try {
+    const response = await axios.get(
+      `${API_URL}/coins/markets`,
+      {
+        params: {
+          vs_currency: "usd",
+          order: "market_cap_desc",
+          per_page: 10,
+          page: 1,
+          sparkline: true
+        }
+      }
+    );
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching market data:", error);
+    return [];
   }
-);
-
-api.interceptors.response.use(
-  (response) => {
-    return response;
-  },
-  (error) => {
-    console.error('API Error:', error.response?.data || error.message);
-    return Promise.reject(error);
-  }
-);
-
-export default api;
+};
