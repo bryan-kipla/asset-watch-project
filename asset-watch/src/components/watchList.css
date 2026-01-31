@@ -1,0 +1,53 @@
+/* Watchlist.css */
+.watchlist {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.watchlist h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.coin-list {
+  list-style: none;
+  padding: 0;
+}
+
+.coin-item {
+  background-color: #333; 
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.coin-item:hover {
+  background-color: #444;
+}
+
+.coin-link {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.coin-link:hover {
+  color: #007bff;
+}
+
+.price-change-positive {
+  color: #28a745; 
+}
+
+.price-change-negative {
+  color: #dc3545; 
+}
+
+@media (max-width: 768px) {
+  .coin-item {
+    padding: 10px;
+  }
+}
