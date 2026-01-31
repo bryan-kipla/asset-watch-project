@@ -1,0 +1,18 @@
+/* In assetRow.css */
+
+.asset-row {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.asset-row:hover {
+  background-color: #f9f9f9;
+}
+
+.asset-row.selected {
+  background-color: #e0eafb; /* A light blue highlight */
+  font-weight: bold;
+  color: #4285F4;
+}
