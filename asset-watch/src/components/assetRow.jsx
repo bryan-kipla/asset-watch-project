@@ -13,7 +13,6 @@ const AssetRow = ({ coin}) => {
 
 return (
     <Link to={`/coin/${coin.id}`} className="asset-row-link">
-        <div className="asset-row">
             <div className="asset-row">
             <div className="asset-name">
             <img src={coin.image} alt={coin.name} className="asset-image" />
@@ -23,7 +22,6 @@ return (
             <div className={`asset-change ${coin.price_change_percentage_24h >= 0 ? 'positive' : 'negative'}`}>
             {formatChange(coin.price_change_percentage_24h)}
             </div>
-        </div>
         </div>
     </Link>
 );
