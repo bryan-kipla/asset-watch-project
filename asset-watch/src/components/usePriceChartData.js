@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { fetchOHLCVData } from '../../api/marketApi';
-
+import { fetchOHLCVData } from '../api/marketApi';
 
 export const usePriceChartData = (networkId, poolAddress, timeframe, aggregate) => {
   const [chartData, setChartData] = useState([]);

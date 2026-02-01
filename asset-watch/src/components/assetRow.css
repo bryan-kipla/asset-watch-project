@@ -1,0 +1,33 @@
+.asset-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #2a2a2a;
+}
+
+.asset-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.asset-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.asset-name {
+  font-weight: bold;
+}
+
+.asset-symbol {
+  color: #aaa;
+}
+
+.asset-price {
+  color: #00ff9d;
+  font-weight: bold;
+}

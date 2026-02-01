@@ -1,6 +1,6 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { usePriceChartData } from './usePriceChartData';
+import { usePriceChartData } from '../priceChart/usePriceChartData';
 import "./priceChart.css"
 
 
@@ -15,10 +15,7 @@ console.log({PriceChart})
   return (
     <div className="price-chart-container" >
       <h3>Price Chart</h3>
-
-
-      <ResponsiveContainer>
-
+      <ResponsiveContainer >
         <LineChart data={chartData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
@@ -31,6 +28,4 @@ console.log({PriceChart})
   );
 };
 
-
 export default PriceChart;
-
