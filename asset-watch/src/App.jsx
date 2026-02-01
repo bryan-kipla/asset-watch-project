@@ -1,5 +1,5 @@
 import React from "react";
-import WatchList from "./components/watchList";
+import WatchList from "./components/watchList.jsx";
 import "./App.css";
 
 function App() {
