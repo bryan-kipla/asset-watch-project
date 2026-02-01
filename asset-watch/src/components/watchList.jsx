@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { getMarketData } from "../api/marketApi";
-import AssetRow from "./assetRow";
+import { getMarketData } from "../api/marketApi.jsx";
+import AssetRow from "./assetRow.jsx";
 import "./watchList.css";
 
 function WatchList() {
