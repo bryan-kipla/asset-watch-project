@@ -1,6 +1,6 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { usePriceChartData } from '../priceChart/usePriceChartData';
+import { usePriceChartData } from './usePriceChartData';
 import "./priceChart.css"
 
 
