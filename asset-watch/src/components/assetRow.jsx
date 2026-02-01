@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './assetRow.css';
- from
+import './assetRow.css'
 
 const AssetRow = ({ coin}) => {
 
