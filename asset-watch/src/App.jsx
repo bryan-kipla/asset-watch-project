@@ -1,18 +1,17 @@
-import React from "react";
-import WatchList from "./components/watchList.jsx";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import WatchList from "./components/watchList";
+import AssetDetail from "./components/assetRow";
 
 function App() {
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>Crypto Asset Watch</h1>
-      </header>
-      <main>
-        <WatchList />
-      </main>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<WatchList />} />
+        <Route path="/asset/:id" element={<AssetDetail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+

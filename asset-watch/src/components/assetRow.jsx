@@ -1,4 +1,4 @@
-import { useParams } from "react";
+import { useParams } from "react-router-dom";
 import PriceChart from "../components/priceChart.jsx";
 
 const AssetDetail = () => {
