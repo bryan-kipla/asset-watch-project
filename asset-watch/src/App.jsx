@@ -1,6 +1,8 @@
 import React from "react";
 import WatchList from './components/watchList.jsx';
 import "./App.css";
+import "./components/priceChart.css";
+
 
 function App() {
   return (
