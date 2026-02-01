@@ -8,7 +8,7 @@ export const getMarketData = async () => {
       `${API_URL}/coins/markets`,
       {
         params: {
-          vs_currency: "usd",
+          vs_currency: "kes",
           order: "market_cap_desc",
           per_page: 10,
           page: 1,

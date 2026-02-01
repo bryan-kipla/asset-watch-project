@@ -1,18 +1,18 @@
 .app {
-  background-color: #121212;
+  background-color: #ffffff;
   color: #e0e0e0;
   min-height: 100vh;
   font-family: "Inter", sans-serif;
 }
 
 .app-header {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   padding: 1rem;
   text-align: center;
   border-bottom: 1px solid #2a2a2a;
 }
 
 .app-header h1 {
-  color: #00ff9d; /* CoinGecko green */
+  color: #003521; /* CoinGecko green */
   font-size: 1.8rem;
 }

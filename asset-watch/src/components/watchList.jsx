@@ -12,7 +12,7 @@ function WatchList() {
 
   return (
     <div className="watchlist">
-      <h2>Top Assets</h2>
+      <h2>Watch list</h2>
       <div className="watchlist-table">
         {assets.map((asset) => (
           <AssetRow key={asset.id} asset={asset} />
