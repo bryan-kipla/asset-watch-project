@@ -1,6 +1,11 @@
 import React from 'react';
+<<<<<<< HEAD
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { usePriceChartData } from './marketApi.jsx';
+=======
+
+import { usePriceChartData } from './usePriceChartData';
+>>>>>>> priceChart
 import "./priceChart.css"
 
 
@@ -10,7 +15,11 @@ console.log({PriceChart})
   if (loading) return <div>Loading price chart...</div>;
   if (error) return <div>Error fetching chart data: {error.message}</div>;
 
+<<<<<<< HEAD
   if (chartData.length === 0) return <div>Select a pool to view the chart.</div>;
+=======
+  if (chartData.length === 0) return <div></div>;
+>>>>>>> priceChart
 
   return (
     <div className="price-chart-container" >

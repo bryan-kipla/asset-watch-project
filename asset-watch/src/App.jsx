@@ -4,6 +4,7 @@ import "./App.css";
 import "./components/priceChart.css";
 
 
+
 function App() {
   return (
     <div className="app">

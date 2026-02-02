@@ -1,6 +1,10 @@
 .asset-row {
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
+=======
+  justify-content: center;
+>>>>>>> priceChart
   align-items: center;
   background-color: #1e1e1e;
   padding: 0.75rem;
@@ -11,7 +15,11 @@
 .asset-info {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   gap: 0.5rem;
+=======
+  gap: 1 rem;
+>>>>>>> priceChart
 }
 
 .asset-icon {
@@ -30,4 +38,8 @@
 .asset-price {
   color: #00ff9d;
   font-weight: bold;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> priceChart
