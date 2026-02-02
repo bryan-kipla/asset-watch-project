@@ -19,7 +19,6 @@ const AssetRow = ({ asset }) => {
     </div>
   );
 }
-<<<<<<< HEAD
 
 export default AssetRow;
 
