@@ -1,0 +1,11 @@
+.price-chart {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.price-chart h2 {
+  color: #00dc82;
+  margin-bottom: 15px;
+}

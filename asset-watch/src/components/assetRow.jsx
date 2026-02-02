@@ -1,17 +1,15 @@
+import { useParams } from "react-router-dom";
+import PriceChart from "../components/PriceChart";
 
-import PriceChart from "../components/priceChart.jsx";
+const AssetDetail = () => {
+  const { id } = useParams();
 
-
-
-function AssetDetail({ asset }) {
   return (
-    <div className="asset-row">
-      <img src={asset.image} alt={asset.name} width="24" />
-      <span>{asset.name}</span>
-      <span>KES {asset.current_price}</span>
+    <div>
+      <h1>Asset: {id}</h1>
+      <PriceChart assetId={id} />
     </div>
   );
-}
+};
 
-
-export default AssetDetail
+export default AssetDetail;

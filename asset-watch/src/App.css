@@ -1,18 +1,42 @@
 .app {
-  background-color: #ffffff;
-  color: #e0e0e0;
+  background-color: #121212;
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
-}
-
-.app-header {
-  background-color: #ffffff;
-  padding: 1rem;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
   text-align: center;
-  border-bottom: 1px solid #2a2a2a;
+  padding: 20px;
 }
 
-.app-header h1 {
-  color: #003521; /* CoinGecko green */
-  font-size: 1.8rem;
+.app-title {
+  color: #00dc82;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.nav-button {
+  background-color: #00dc82;
+  color: #121212;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #00b86b;
+  color: #ffffff;
+}
+
+.content {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
 }
