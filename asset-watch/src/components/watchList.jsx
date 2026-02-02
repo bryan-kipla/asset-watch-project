@@ -1,4 +1,4 @@
-// src/components/WatchList.jsx
+
 import React, { useEffect, useState } from "react";
 import { getMarketData } from "../api/marketApi.jsx";
 import AssetRow from "./assetRow.jsx";

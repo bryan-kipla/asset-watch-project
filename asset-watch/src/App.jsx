@@ -1,20 +1,28 @@
 import React from "react";
-import WatchList from './components/watchList.jsx';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import WatchList from "./components/watchList.jsx";
+import PriceChart from "./components/priceChart.jsx";
+import AssetRow from "./components/assetRow.jsx";
 import "./App.css";
-import "./components/priceChart.css";
-
-
 
 function App() {
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>Asset Watch</h1>
-      </header>
-      <main>
-        <WatchList />
-      </main>
-    </div>
+    <Router>
+      <div className="app">
+        <h1>AssetWatch Dashboard</h1>
+        <nav>
+          <button><Link to="/watchlist">WatchList</Link></button>
+          <button><Link to="/pricechart">PriceChart</Link></button>
+          
+        </nav>
+
+        <Routes>
+          <Route path="/watchlist" element={<WatchList />} />
+          <Route path="/pricechart" element={<PriceChart />} />
+          
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
