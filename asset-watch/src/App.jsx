@@ -1,6 +1,5 @@
 import React from "react";
 
-import WatchList from "./components/watchList.jsx";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import WatchList from "./components/watchList.jsx";
