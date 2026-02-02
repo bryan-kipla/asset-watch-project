@@ -1,17 +1,19 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import WatchList from "./components/watchList";
-import AssetDetail from "./components/assetRow";
+import React from "react";
+import WatchList from './components/watchList.jsx';
+import "./App.css";
+
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<WatchList />} />
-        <Route path="/asset/:id" element={<AssetDetail />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="app">
+      <header className="app-header">
+        <h1>Asset Watch</h1>
+      </header>
+      <main>
+        <WatchList />
+      </main>
+    </div>
   );
 }
 
 export default App;
-

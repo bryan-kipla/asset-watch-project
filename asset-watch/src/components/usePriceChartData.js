@@ -14,7 +14,6 @@ export const usePriceChartData = (networkId, poolAddress, timeframe, aggregate) 
         setLoading(true);
         const ohlcv = await fetchOHLCVData(networkId, poolAddress, timeframe, aggregate);
         
-        // Process data into chart format: [timestamp, open, high, low, close, volume]
         const processedData = ohlcv.map((item) => {
           const [timestamp, open, high, low, close, volume] = item;
           return {

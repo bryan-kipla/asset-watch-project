@@ -1,15 +1,25 @@
-import { useParams } from "react-router-dom";
-import PriceChart from "../components/priceChart.jsx";
+import React from "react";
+import PriceChart from "./priceChart";
+import "./assetRow.css";
 
-const AssetDetail = () => {
-  const { id } = useParams();
-
+function AssetRow({ asset }) {
   return (
-    <div>
-      <h1>Asset: {id}</h1>
-      <PriceChart assetId={id} />
+    <div className="asset-row">
+      <img src={asset.image} alt={asset.name} width="24" />
+      <span className="asset-name">{asset.name} ({asset.symbol.toUpperCase()})</span>
+      <span className="asset-price">
+        {new Intl.NumberFormat("en-US", {
+          style: "currency",
+          currency: "USD",
+        }).format(asset.current_price)}
+      </span>
+      {asset.sparkline_in_7d ? (
+        <PriceChart sparkline={asset.sparkline_in_7d.price} />
+      ) : (
+        <span>No chart data</span>
+      )}
     </div>
   );
-};
+}
 
-export default AssetDetail;
+export default AssetRow;
