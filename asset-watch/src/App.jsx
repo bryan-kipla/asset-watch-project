@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <h1>AssetWatch Dashboard</h1>
+        <h1>AssetWatch </h1>
         <nav>
           <button><Link to="/watchlist">WatchList</Link></button>
           <button><Link to="/pricechart">PriceChart</Link></button>
