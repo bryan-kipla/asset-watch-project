@@ -1,5 +1,5 @@
 import React from 'react';
-import PriceChart from './PriceChart';
+import PriceChart from './priceChart';
 import "./assetRow.css";
 
 const AssetRow = ({ asset }) => {
@@ -20,7 +20,5 @@ const AssetRow = ({ asset }) => {
   );
 }
 
-
 export default AssetRow;
-
 
