@@ -1,17 +1,30 @@
+import React from "react";
+import PriceChart from "./priceChart.jsx";
+import "./assetRow.css";
 
-import PriceChart from "../components/priceChart.jsx";
+const AssetRow = ({ asset }) => {
+  const change = asset.price_change_percentage_24h ?? 0;
 
-
-
-function AssetDetail({ asset }) {
   return (
     <div className="asset-row">
-      <img src={asset.image} alt={asset.name} width="24" />
-      <span>{asset.name}</span>
-      <span>KES {asset.current_price}</span>
+      <div className="asset-info">
+        <span className="asset-name">{asset.name}</span>
+        <span className="asset-symbol">({asset.symbol})</span>
+        <span className="asset-price">
+          ${asset.current_price?.toFixed(2)}
+        </span>
+
+        <span className={`asset-change ${change >= 0 ? "positive" : "negative"}`}>
+          {change >= 0 ? "+" : ""}
+          {change.toFixed(2)}%
+        </span>
+      </div>
+
+      <div className="asset-chart">
+        <PriceChart sparkline={asset.sparkline} />
+      </div>
     </div>
   );
-}
+};
 
-
-export default AssetDetail
+export default AssetRow;
