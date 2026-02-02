@@ -1,0 +1,14 @@
+.watchlist {
+  padding: 1rem;
+}
+
+.watchlist h2 {
+  color: #00472c;
+  margin-bottom: 1rem;
+}
+
+.watchlist-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
